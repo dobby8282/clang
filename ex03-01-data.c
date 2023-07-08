@@ -29,12 +29,22 @@ int main(void)
     double err_num = 0;
 
     // 반복문
-    for (int i = 0; i < 100; i++) // i++ -> i=i+1
-    {
-        err_num += 0.1; // err_num = err_num + 0.1;
-        printf("%d번째: %.20f\n", i, err_num);
-    }
+    // Ctrl + / : 주석 단축키
+    // for (int i = 0; i < 100; i++) // i++ -> i=i+1
+    // {
+    //     err_num += 0.1; // err_num = err_num + 0.1;
+    //     printf("%d번째: %.20f\n", i, err_num);
+    // }
 
+    char cnum = 128; // char 형의 최대값은 127이다.
+    unsigned char u_cnum = 255; // 0 ~ 255 
+    short snum = 32768; // short 형의 최대 값은 32767이다.
+    unsigned short u_snum = 32768;
+
+    printf("%d\n", cnum);
+    printf("%d\n", u_cnum);
+    printf("%d\n", snum);
+    printf("%d\n", u_snum);
 
     return 0;
 }
