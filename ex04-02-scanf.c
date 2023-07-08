@@ -36,8 +36,7 @@ int main(void)
     scanf("%f %d %f", &fnum1, &num1, &fnum2);
     printf("입력된 값들: %f %d %f", fnum1, num1, fnum2);
     */
-
-
+   
     int num1, num2, num3;
     float fnum1, fnum2;
     printf("세 개의 정수 입력: ");
