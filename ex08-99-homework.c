@@ -31,33 +31,44 @@
   ***
    *
 
+
+          i     j
+   *      0   j > 3  -> j > 3+i
+  ***     1   j > 4  -> j > 3+i
+ *****    2   j > 5  -> j > 3+i
+*******   3   
+ ******   4   j > 5  -> i+j > 9
+  *****   5   j > 4  -> i+j > 9
+   ****   6   j > 3  -> i+j > 9
+
 */
 #include <stdio.h>
 
 int main(void)
 {
-    for (int i = 0; i < 7; i++)
+    for(int i = 0; i < 7; i++)
     {
-        /*
-        i = 2
-        j = 0
-        조건 0 < 3
-        0 *
-        1 **
-        2 ***
-        3 ****
-        4 *****
-        5 ******
-        6 *******
-  
-        */
-
-
-        for (int j = 0; j < i+1; j++)
+        for(int j = 0; j < 7; j++)
         {
-            printf("*");
+            if(i < 7/2+1) {
+                if(j < 3-i) {
+                    printf(" ");
+                } else if(j > 3+i) {
+                    printf(" ");
+                } else {
+                    printf("*");
+                }
+            } else {
+                if(j < i-3) {
+                    printf(" ");
+                } else if(i+j > 9) {
+                    printf(" ");
+                } else {
+                    printf("*");
+                }
+            }
         }
-        printf("\n");
+        printf("\n");        
     }
 
     return 0;

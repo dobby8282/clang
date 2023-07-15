@@ -60,7 +60,7 @@ int main(void)
     
     */
 
-    int rtnCd = 1;
+    int rtnCd = 4;
 
     switch (rtnCd)
     {

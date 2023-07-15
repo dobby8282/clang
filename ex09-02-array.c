@@ -26,7 +26,10 @@ int main(void)
     char mind[30] = "I Love Programming!";
     printf("%s\n", mind);
 
+    //"I Love \0rogramming!                  ";
     mind[7] = '\0'; // 8번째 요소로 null 문자 삽입
+    printf("%s\n", mind);
+    mind[7] = 'P';
     printf("%s\n", mind);
 
     printf("sizeof: %d\n", sizeof(mind));

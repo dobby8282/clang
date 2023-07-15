@@ -75,25 +75,15 @@ int main(void)
     int score = 75;
 
     if(score > 90)
-    {
         printf("수 입니다.\n");
-    }
     else if (score > 80)
-    {
         printf("우 입니다.\n");
-    }
     else if (score > 70)
-    {
         printf("미 입니다.\n");
-    }
     else if (score > 60)
-    {
         printf("양 입니다.\n");
-    }
     else
-    {
         printf("가 입니다.\n");
-    }
 
     return 0;
     
