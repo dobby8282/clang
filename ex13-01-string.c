@@ -30,12 +30,5 @@ int main(void)
     printf("2-2: %s\n", bad);
     printf("2-3: %p %p\n", good, bad);
 
-
-
-
-
-
-
-
     return 0;
 }
