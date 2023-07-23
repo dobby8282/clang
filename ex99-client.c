@@ -18,7 +18,7 @@ C:\msys64\mingw64\bin\gcc.exe -fdiagnostics-color=always -g C:\clang\ex99-client
     #define closesocket(s) close(s) // 유닉스 계열에서 소켓을 닫기 위한 매크로
 #endif
 
-#define PORT 8080               // 서버의 포트 번호
+#define PORT 9090               // 서버의 포트 번호
 #define BUFFER_SIZE 1024        // 버퍼 크기 정의
 
 int main() {
