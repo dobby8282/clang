@@ -1,3 +1,6 @@
+/*
+C:\msys64\mingw64\bin\gcc.exe -fdiagnostics-color=always -g C:\clang\ex99-client.c -o C:\clang\ex99-client.exe -lws2_32
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
